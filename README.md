@@ -64,7 +64,7 @@ Not exactly. Chain-of-thought is often represented as a linear reasoning trace, 
 **Does CorticalLoop require API keys?**
 No. The default path is offline using `MockLLM` + `HeuristicEvaluator`.
 
-## GitHub description suggestion (≈350 chars)
+## GitHub description suggestion
 CorticalLoop is a neuro-inspired AI reasoning framework for AI agents. It models reasoning as iterative feedback loops of hypothesis generation, evaluation, and refinement, with audit-ready run records. Offline-first with MockLLM + heuristic evaluator, plus optional OpenAI adapters when API keys are available.
 
 ## License
