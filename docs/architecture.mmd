@@ -1,0 +1,15 @@
+flowchart TD
+    A[Task] --> B[Hypothesis Generator]
+    B --> C[Hypothesis Pool]
+    C --> D[Evaluator]
+    D --> E[Feedback Signal]
+    E --> F[Refiner]
+    F --> C
+
+    G[Recurrent Loop Controller] -.iterative control.-> B
+    G -.iterative control.-> D
+    G -.iterative control.-> F
+
+    H[Inhibitory Gate (optional prune)] --> C
+    C --> I[Final Answer]
+    C --> J[RunRecord JSON Export]
